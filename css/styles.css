@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed&family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --gris: #FAF9F6;
+    --blanco: #F3F1EC;
+    --uva-suave: #D3C4D1;
+    --negro: #292D35;
+    --rojo-suave: #C65364;
+
+    --fuente-titulos: 'Libre Caslon Condensed', serif;
+    --fuente-textos: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding-top: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--blanco);
+}
+
+main {
+    width: 96%;
+    max-width: 100rem;
+    margin: 8rem auto 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fuente-titulos);
+    font-size: 5rem;
+}
+
+p,
+span,
+a {
+    font-family: var(--fuente-textos);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* * BARRA DE NAVEGACIÓN */
+.navbar {
+    position: fixed;
+    top: 0.875rem;
+    left: 50%;
+    width: calc(100% - 2rem);
+    min-height: 3rem;
+    padding: 1.25rem;
+
+    z-index: 1030;
+    transform: translateX(-50%);
+
+    background-color: var(--negro);
+    border-radius: 50rem;
+    box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.10);
+
+    backdrop-filter: blur(0.875rem);
+    -webkit-backdrop-filter: blur(0.875rem);
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.navbar-brand {
+    font-family: var(--fuente-textos);
+    font-size: 10px;
+    color: var(--blanco);
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0;
+    margin-right: 1.25rem;
+}
+
+.logo-michalle {
+    display: block;
+
+    width: 120px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.navbar-toggle,
+.navbar-toggler {
+    display: inline-flex;
+    gap: 8px;
+    padding: 10px 16px;
+    border: 1px solid var(--rojo-suave);
+    border-radius: 30px;
+    background-color: var(--rojo-suave);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.navbar-toggle:hover {
+    background-color: var(--blanco);
+    color: var(--rojo-suave);
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    direction: ltr;
+    font-feature-settings: 'liga';
+    -webkit-font-feature-settings: 'liga';
+
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Efecto cristal */
+.cristal {
+
+    padding: clamp(1.5rem, 4vw, 3rem);
+
+    /* Vidrio translúcido */
+    background: rgba(239, 210, 175, 0.08);
+
+    /* Desenfoque del fondo */
+    backdrop-filter: blur(18px) saturate(150%);
+    -webkit-backdrop-filter: blur(18px) saturate(150%);
+
+    /* Borde iluminado */
+    border: 1px solid rgba(239, 210, 175, 0.35);
+    border-radius: 24px;
+
+    /* Profundidad y reflejos */
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.25),
+        inset 0 1px 1px rgba(236, 231, 211, 0.25),
+        inset 0 0 20px rgba(239, 210, 175, 0.03);
+
+    color: var(--blanco-marfil);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Reflejo sutil en la parte superior */
+.cristal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 8%;
+    width: 84%;
+    height: 1px;
+
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(239, 210, 175, 0.55),
+            transparent);
+}
+
+.texto-rosita {
+    color: var(--rojo-suave);
+}
+
+.texto-blanquito {
+    color: var(--blanco);
+}
+
+.texto-uvita {
+    color: var(--uva-suave);
+}
+
+.texto-oscurito {
+    color: var(--negro);
+}
+
+main .navbar-toggle {
+    display: flex;
+    width: fit-content;
+    margin-top: 1.5rem;
+}
+
+/* * SECCIONES */
+#proyectos {
+    background-color: var(--uva-suave);
+}
+
+#sobremi {
+    background-color: var(--negro);
+}
+
+#habilidades {
+    background-color: var();
+}
