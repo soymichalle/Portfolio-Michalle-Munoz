@@ -78,12 +78,19 @@
     <main>
 
         <!-- INICIO -->
-        <section id="inicio">
+        <section id="inicio" class="mb-5 p-1">
             <div class="cristal">
                 <div class="row g-3">
                     <div class="col-12 col-md-8">
-                        <span class="texto-oscurito">Portafolio - 2026</span>
-                        <hr>
+                        <div class="row">
+                            <div class="col-12 col-md-3">
+                                <span class="texto-oscurito">Portafolio - 2026</span>
+                            </div>
+
+                            <div class="col-12 col-md-9">
+                                <hr>
+                            </div>
+                        </div>
                         <h1 class="texto-oscurito">Michalle Daniela</h1>
                         <h1 class="texto-rosita">Muñoz Ortegón</h1>
                         <span class="col-12">Ingeniera de sistemas</span>
@@ -92,30 +99,187 @@
                             Proyectos
                         </a>
                     </div>
-                    <div class="col-12 col-md-4"></div>
+                    <div class="col-12 col-md-4 align-items-center">
+                        <img src="src/img-1.jpeg" class="rounded-circle " alt="Imagen de perfil de Desarrolladora">
+                    </div>
                 </div>
             </div>
 
         </section>
-        
+
         <!-- PROYECTOS -->
-        <section id="proyectos">
+        <section id="proyectos" class="pt-5">
+
+            <!-- Fondo visual -->
+            <div class="hero-overlay px-5">
+                <div class="hero-content">
+
+                    <!-- Información del proyecto -->
+                    <div class="hero-info">
+
+                        <div class="row">
+                            <div class="col-12 col-md-3">
+                                <span class="texto-uvita">MIS PROYECTOS</span>
+                            </div>
+
+                            <div class="col-12 col-md-9">
+                                <hr class="texto-blanquito">
+                            </div>
+                        </div>
+
+                        <h1 class="texto-blanquito">
+                            MAYSE S.A.S.
+                        </h1>
+
+                        <h2 class="texto-uvita">
+                            DESARROLLO WEB
+                        </h2>
+
+                        <p class="texto-blanquito">
+                            Diseño y desarrollo de la presencia digital de una
+                            empresa de mantenimiento integral y seguridad industrial.
+                            Una solución web enfocada en fortalecer su identidad
+                            corporativa y presentar su portafolio de servicios.
+                        </p>
+
+                        <div class="tecnologias">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                        </div>
+
+                        <a class="nav-link navbar-toggle" href="https://mayse.co" target="_blank"
+                            rel="noopener noreferrer">
+                            EXPLORAR PROYECTO
+                        </a>
+
+                    </div>
+
+                    <!-- Tarjetas del carrusel -->
+                    <div class="proyecto-carousel">
+
+                        <article class="proyecto-card active" data-proyecto="0">
+                            <img src="./src/carrousel/mayse_page.png" alt="Captura de Pagina Inicial de MAYSE">
+
+                            <div class="card-content">
+                                <h2>MAYSE S.A.S.</h2>
+                            </div>
+                        </article>
+
+                        <article class="proyecto-card" data-proyecto="1">
+                            <img src="./src/carrousel/dulce_capricho_page.png"
+                                alt="Captura de Pagina Inicial Dulce Capricho">
+
+                            <div class="card-content">
+                                <h2>Dulce<br>Capricho</h2>
+                            </div>
+                        </article>
+
+                        <article class="proyecto-card" data-proyecto="2">
+                            <img src="./src/carrousel/boronvino_page.png" alt="Captura de Pagina de BoronVino">
+
+                            <div class="card-content">
+                                <h2>BoronVino</h2>
+                            </div>
+                        </article>
+
+                        <article class="proyecto-card" data-proyecto="3">
+                            <img src="./src/carrousel/planificador_page.png" alt="Captura de Pagina de Planificadoe">
+
+                            <div class="card-content">
+                                <h2>Planificador<br>Web</h2>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles inferiores -->
+            <div class="carousel-controls">
+
+                <!-- Botones centrados -->
+                <div class="carousel-arrows">
+                    <button class="btn-prev" aria-label="Servicio anterior">
+                        &#8592;
+                    </button>
+
+                    <button class="btn-next" aria-label="Servicio siguiente">
+                        &#8594;
+                    </button>
+                </div>
+
+                <div class="navbar-brand">
+                    <img src="./src/logo-michalle.png" alt="Logo Michalle">
+                </div>
+
+            </div>
 
         </section>
-        
-        <!-- SOBRE MI -->
-        <section id="sobremi">
 
+        <!-- SOBRE MI -->
+        <section id="sobremi" class="mb-5 p-5">
+
+            <div class="mt-5">
+
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <span class="texto-uvita">SOBRE MI</span>
+                    </div>
+
+                    <div class="col-12 col-md-9">
+                        <hr class="texto-blanquito">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-4 align-items-center">
+                        <img src="src/img-2.png" class="rounded-circle " alt="Imagen de perfil de Desarrolladora">
+                    </div>
+                    
+                    <div class="col-12 col-md-8">
+                        <h1 class="texto-uvita">MICHALLE DANIELA<br>MUÑOZ ORTEGÓN</h1>
+                        <span class="texto-uvita fst-italic col-12">Ingeniera de sistemas</span>
+                        <p class="texto-uvita py-2 justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Recusandae, ut! Dignissimos facere quos, delectus eos inventore corporis ipsa odio, libero
+                            doloribus, neque culpa modi corrupti esse ducimus saepe impedit fuga.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- SOBRE MI - HABILIDADES -->
-        <section id="habilidades">
+        <section id="habilidades" class="mb-5 p-1">
 
+            <div class="mt-5">
+
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <span class="texto-oscurito">SOBRE MI - HABILIDADES</span>
+                    </div>
+
+                    <div class="col-12 col-md-9">
+                        <hr class="texto-oscurito">
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- CONTACTO -->
         <section id="contacto">
+            <div class="mt-5">
 
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <span class="texto-oscurito">CONTÁCTAME</span>
+                    </div>
+
+                    <div class="col-12 col-md-9">
+                        <hr class="texto-oscurito">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
