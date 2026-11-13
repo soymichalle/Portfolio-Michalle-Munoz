@@ -20,6 +20,10 @@ Un espacio para integrar tecnología, creatividad y diseño, mostrando mi evoluc
 * Bootstrap 5
 * Manipulación del DOM
 
+## 🚀 Despliegue
+
+* **Git-Hub Pages:** [Portafolio](https://soymichalle.github.io/Portfolio-Michalle-Munoz/)
+
 ## 🎨 Diseño
 
 * **Figma:** [Portafolio](https://www.figma.com/design/iGSHLc0bM1zGfoVu21Ld0r/Mi-Primer-Portafolio-Dev?node-id=0-1&t=0rT2EU62n704Xxl5-1)
