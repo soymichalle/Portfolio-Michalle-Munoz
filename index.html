@@ -237,7 +237,7 @@
                     <div class="col-12 col-md-4 align-items-center">
                         <img src="src/img-2.png" class="rounded-circle " alt="Imagen de perfil de Desarrolladora">
                     </div>
-                    
+
                     <div class="col-12 col-md-8">
                         <h1 class="texto-uvita">MICHALLE DANIELA<br>MUÑOZ ORTEGÓN</h1>
                         <span class="texto-uvita fst-italic col-12">Ingeniera de sistemas</span>
@@ -267,7 +267,7 @@
         </section>
 
         <!-- CONTACTO -->
-        <section id="contacto">
+        <section id="contacto" class="mb-5 p-1">
             <div class="mt-5">
 
                 <div class="row">
@@ -278,6 +278,156 @@
                     <div class="col-12 col-md-9">
                         <hr class="texto-oscurito">
                     </div>
+                </div>
+
+                <div class="row pt-4">
+                    <div class="col-12 col-md-8">
+                        <div class="cristal">
+                            <div class="row  align-items-baseline">
+
+                                <div class="col-12 col-md-6">
+                                    <h2 class="texto-oscurito titulo-formulario">Formulario</h2>
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <p class="texto-oscurito subtitulo-formulario">de contacto</p>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <p>
+                                        ¡Qué bueno tenerte por aquí!
+                                        Cuéntame qué tienes en mente.
+                                        Me encantará conocer tu idea, proyecto
+                                        o propuesta.
+                                    </p>
+                                </div>
+
+                                <form id="formularioContacto">
+
+                                    <div class="row">
+
+                                        <div class="col-12 col-md-6">
+                                            <div class="mb-3">
+                                                <label for="inputNombreCompleto" class="form-label">
+                                                    ¿Cómo te llamas?
+                                                </label>
+
+                                                <input type="text" class="form-control" id="inputNombreCompleto"
+                                                    placeholder="Tu nombre completo" autocomplete="name" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <div class="mb-3">
+                                                <label for="inputEmpresa" class="form-label">
+                                                    Empresa u organización
+                                                    <span class="text-muted">(opcional)</span>
+                                                </label>
+
+                                                <input type="text" class="form-control" id="inputEmpresa"
+                                                    placeholder="¿Desde dónde me escribes?" autocomplete="organization">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-12 col-md-6">
+                                            <div class="mb-3">
+                                                <label for="inputEmail" class="form-label">
+                                                    ¿A qué correo puedo escribirte?
+                                                </label>
+
+                                                <input type="email" class="form-control" id="inputEmail"
+                                                    placeholder="ejemplo@correo.com" autocomplete="email" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <div class="mb-3">
+                                                <label for="inputTelefono" class="form-label">
+                                                    Número de contacto
+                                                    <span class="text-muted">(opcional)</span>
+                                                </label>
+
+                                                <div class="input-group telefono-group">
+
+                                                    <!-- Indicativo personalizado -->
+                                                    <div class="dropdown">
+                                                        <button class="btn indicativo-toggle dropdown-toggle"
+                                                            type="button" data-bs-toggle="dropdown"
+                                                            aria-expanded="false" id="indicativoBtn">
+
+                                                            +57
+                                                        </button>
+
+                                                        <ul class="dropdown-menu indicativo-menu">
+                                                            <li><button class="dropdown-item active" type="button"
+                                                                    data-code="+57">Colombia +57</button></li>
+                                                            <li><button class="dropdown-item" type="button"
+                                                                    data-code="+1">Estados Unidos +1</button></li>
+                                                            <li><button class="dropdown-item" type="button"
+                                                                    data-code="+52">México +52</button></li>
+                                                            <li><button class="dropdown-item" type="button"
+                                                                    data-code="+34">España +34</button></li>
+                                                            <li><button class="dropdown-item" type="button"
+                                                                    data-code="+54">Argentina +54</button></li>
+                                                            <li><button class="dropdown-item" type="button"
+                                                                    data-code="+56">Chile +56</button></li>
+                                                            <li><button class="dropdown-item" type="button"
+                                                                    data-code="+51">Perú +51</button></li>
+                                                            <li><button class="dropdown-item" type="button"
+                                                                    data-code="+593">Ecuador +593</button></li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <input type="hidden" id="indicativo" value="+57">
+
+                                                    <input type="tel" class="form-control" id="inputTelefono"
+                                                        placeholder="300 123 4567" autocomplete="tel">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="inputMensaje" class="form-label">
+                                            Cuéntame, ¿qué tienes en mente?
+                                        </label>
+
+                                        <textarea class="form-control" id="inputMensaje" rows="4"
+                                            placeholder="¿Tienes una idea, un proyecto, una propuesta o simplemente quieres conversar? Te leo."
+                                            required></textarea>
+                                    </div>
+
+                                    <div class="form-text mb-3">
+                                        Tus datos serán utilizados únicamente
+                                        para responder a tu mensaje.
+                                    </div>
+
+                                    <div class="mb-4 form-check">
+                                        <input type="checkbox" class="form-check-input" id="aceptaContacto" required>
+
+                                        <label class="form-check-label" for="aceptaContacto">
+                                            Acepto ser contactado a través de
+                                            alguno de los medios que he proporcionado.
+                                        </label>
+                                    </div>
+
+                                    <button type="submit" class="nav-link navbar-toggle">
+                                        ¡Hablemos!
+                                    </button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                    </div>
+
                 </div>
             </div>
         </section>

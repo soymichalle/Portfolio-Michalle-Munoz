@@ -206,7 +206,7 @@ main .navbar-toggle {
 }
 
 /* * SECCIONES */
-#inicio {
+#inicio, #contacto {
     width: 96%;
     max-width: 100rem;
     margin: 8rem auto 1rem;
@@ -429,4 +429,95 @@ main .navbar-toggle {
 
 #habilidades {
     background-color: var(--blanco);
+}
+
+/* CAMPOS DEL FORMULARIO */
+.form-control,
+.form-select {
+    border-radius: 2rem;
+    color: var(--negro);
+    background-color: var(--gris);
+    font-size: small;
+    font-family: var(--fuente-textos);
+    padding: 1rem;
+    border: 1px solid rgba(41, 45, 53, 0.15);
+    box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.08);
+}
+
+/* PLACEHOLDER */
+.form-control::placeholder {
+    color: rgba(41, 45, 53, 0.5);
+}
+
+/* SELECT DE INDICATIVO */
+#indicativo {
+    width: 7rem;
+    flex: 0 0 7rem;
+    padding: 1rem;
+    font-size: small;
+    font-family: var(--fuente-textos);
+    color: var(--negro);
+    background-color: var(--gris);
+    border-radius: 2rem 0 0 2rem;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+/* CAMPO DE TELÉFONO */
+#inputTelefono {
+    border-radius: 0 2rem 2rem 0;
+}
+
+/* OPCIONES DEL SELECT */
+#indicativo option {
+    color: var(--negro);
+    background-color: var(--gris);
+    font-family: var(--fuente-textos);
+    font-size: 13px;
+}
+
+/* CONTENEDOR DEL TELÉFONO */
+.telefono-group {
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.08);
+}
+
+/* CAMPOS DEL FORMULARIO */
+.form-control,
+.form-select {
+    border-radius: 2rem;
+    color: var(--negro);
+    background-color: var(--gris);
+    font-size: small;
+    font-family: var(--fuente-textos);
+    padding: 1rem;
+
+    border: 1px solid rgba(41, 45, 53, 0.15);
+
+    box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.08);
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* PLACEHOLDER */
+.form-control::placeholder {
+    color: rgba(41, 45, 53, 0.5);
+}
+
+/* ESTADO FOCUS */
+.form-control:focus {
+    border-color: var(--uva-suave);
+    box-shadow: 0 0 0 0.2rem rgba(211, 196, 209, 0.25);
+}
+
+/* TÍTULOS DEL FORMULARIO */
+.titulo-formulario {
+    margin: 0;
+    line-height: 1;
+}
+
+.subtitulo-formulario {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1;
 }
