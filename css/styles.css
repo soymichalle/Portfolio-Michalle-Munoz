@@ -79,6 +79,17 @@ a {
     margin-right: 1.25rem;
 }
 
+.navbar-brand {
+    width: fit-content;
+    flex: 0 0 auto;
+}
+
+.navbar-brand img {
+    display: block;
+    max-width: 100px;
+    height: auto;
+}
+
 .logo-michalle {
     display: block;
 
@@ -206,7 +217,8 @@ main .navbar-toggle {
 }
 
 /* * SECCIONES */
-#inicio, #contacto {
+#inicio,
+#contacto {
     width: 96%;
     max-width: 100rem;
     margin: 8rem auto 1rem;
@@ -342,14 +354,13 @@ main .navbar-toggle {
 
 /* CONTENEDOR DE CONTROLES */
 .carousel-controls {
-    position: absolute;
+    position: relative;
     bottom: 35px;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 3;
 }
 
 /* BOTONES CENTRADOS */
@@ -360,38 +371,35 @@ main .navbar-toggle {
     gap: 12px;
 }
 
-/* CONTADOR A LA DERECHA */
-.slide-counter {
-    position: absolute;
-    right: 6%;
-    bottom: 0;
+.boton-carrusel {
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
 
-    color: white;
-    font-size: 1.8rem;
-    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 1px solid var(--uva-suave);
+
+    color: var(--uva-suave);
+    background-color: transparent;
+
+    font-size: 1.2rem;
+    font-weight: bolder;
+
+    transition: all 0.3s ease;
 }
 
-/* =========================================================
-   CONTADOR DEL CARRUSEL
-   ========================================================= */
-
-.slide-counter {
-    position: absolute;
-    z-index: 3;
-
-    left: 6%;
-    bottom: 35px;
-
-    color: var(--mayse-blanco);
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.current-slide {
-    color: var(--mayse-verde-claro);
+.boton-carrusel:hover {
+    transform: scale(1.05);
+    background-color: var(--blanco);
+    color: var(--rojo-suave);
 }
 
 /* BOTÓN FLOTANTE WHATSAPP */
+
 .whatsapp-float {
     position: fixed;
     bottom: 25px;
