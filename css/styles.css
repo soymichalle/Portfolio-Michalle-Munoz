@@ -230,6 +230,28 @@ main .navbar-toggle {
 
 #proyectos {
     background-color: var(--negro);
+    position: relative;
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: var(--hero-image);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    isolation: isolate;
+    transition: background-image 0.4s ease;
+}
+
+#proyectos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(41, 45, 53, 0.93);
+    z-index: -1;
 }
 
 .tecnologias {
@@ -254,13 +276,12 @@ main .navbar-toggle {
 
 .proyecto-carousel {
     position: relative;
-    z-index: 2;
-
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 15px;
+    margin-bottom: 1rem;
 }
 
 /* Tarjetas */
@@ -268,10 +289,9 @@ main .navbar-toggle {
 .proyecto-card {
     position: relative;
 
-    width: 145px;
-    height: 360px;
+    width: 7rem;
+    height: 17rem;
 
-    flex-shrink: 0;
     overflow: hidden;
 
     border-radius: 12px;

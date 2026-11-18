@@ -114,84 +114,94 @@
             <div class="hero-overlay px-5">
                 <div class="hero-content">
 
-                    <!-- Información del proyecto -->
-                    <div class="hero-info">
-
-                        <div class="row">
-                            <div class="col-12 col-md-3">
-                                <span class="texto-uvita">MIS PROYECTOS</span>
-                            </div>
-
-                            <div class="col-12 col-md-9">
-                                <hr class="texto-blanquito">
-                            </div>
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <span class="texto-uvita">MIS PROYECTOS</span>
                         </div>
 
-                        <h1 class="texto-blanquito">
-                            MAYSE S.A.S.
-                        </h1>
-
-                        <h2 class="texto-uvita">
-                            DESARROLLO WEB
-                        </h2>
-
-                        <p class="texto-blanquito">
-                            Diseño y desarrollo de la presencia digital de una
-                            empresa de mantenimiento integral y seguridad industrial.
-                            Una solución web enfocada en fortalecer su identidad
-                            corporativa y presentar su portafolio de servicios.
-                        </p>
-
-                        <div class="tecnologias">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>Bootstrap</span>
+                        <div class="col-12 col-md-8">
+                            <hr class="texto-blanquito">
                         </div>
 
-                        <a class="nav-link navbar-toggle" href="https://mayse.co" target="_blank"
-                            rel="noopener noreferrer">
-                            EXPLORAR PROYECTO
-                        </a>
-
+                        <div class="col-12 col-md-1">
+                            <div class="navbar-brand">
+                                <img src="./src/logo-michalle.png" alt="Logo Michalle">
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Tarjetas del carrusel -->
-                    <div class="proyecto-carousel">
 
-                        <article class="proyecto-card active" data-proyecto="0">
-                            <img src="./src/carrousel/mayse_page.png" alt="Captura de Pagina Inicial de MAYSE">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <!-- Información del proyecto -->
+                            <div class="hero-info">
 
-                            <div class="card-content">
-                                <h2>MAYSE S.A.S.</h2>
+                                <h6 class="texto-blanquito" id="proyecto-titulo">
+                                    MAYSE S.A.S.
+                                </h6>
+
+                                <span class="texto-uvita" id="proyecto-categoria">
+                                    DESARROLLO WEB
+                                </span>
+
+                                <p class="texto-blanquito justify" id="proyecto-descripcion">
+                                    Diseño y desarrollo de la presencia digital de una
+                                    empresa de mantenimiento integral y seguridad industrial.
+                                    Una solución web enfocada en fortalecer su identidad
+                                    corporativa y presentar su portafolio de servicios.
+                                </p>
+
+                                <div class="tecnologias">
+                                </div>
+
+                                <a class="nav-link navbar-toggle" id="proyecto-link" href="#" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span>EXPLORAR PROYECTO</span>
+                                </a>
+
                             </div>
-                        </article>
+                        </div>
 
-                        <article class="proyecto-card" data-proyecto="1">
-                            <img src="./src/carrousel/dulce_capricho_page.png"
-                                alt="Captura de Pagina Inicial Dulce Capricho">
+                        <div class="col-12 col-md-6">
 
-                            <div class="card-content">
-                                <h2>Dulce<br>Capricho</h2>
+                            <!-- Tarjetas del carrusel -->
+                            <div class="proyecto-carousel">
+
+                                <article class="proyecto-card active" data-proyecto="0">
+                                    <img src="./src/carrousel/mayse_page.png" alt="Captura de Pagina Inicial de MAYSE">
+
+                                    <div class="card-content">
+                                        <h2>MAYSE S.A.S.</h2>
+                                    </div>
+                                </article>
+
+                                <article class="proyecto-card" data-proyecto="1">
+                                    <img src="./src/carrousel/dulce_capricho_page.png"
+                                        alt="Captura de Pagina Inicial Dulce Capricho">
+
+                                    <div class="card-content">
+                                        <h2>Dulce<br>Capricho</h2>
+                                    </div>
+                                </article>
+
+                                <article class="proyecto-card" data-proyecto="2">
+                                    <img src="./src/carrousel/boronvino_page.png" alt="Captura de Pagina de BoronVino">
+
+                                    <div class="card-content">
+                                        <h2>BoronVino</h2>
+                                    </div>
+                                </article>
+
+                                <article class="proyecto-card" data-proyecto="3">
+                                    <img src="./src/carrousel/planificador_page.png"
+                                        alt="Captura de Pagina de Planificadoe">
+
+                                    <div class="card-content">
+                                        <h2>Planificador<br>Web</h2>
+                                    </div>
+                                </article>
                             </div>
-                        </article>
-
-                        <article class="proyecto-card" data-proyecto="2">
-                            <img src="./src/carrousel/boronvino_page.png" alt="Captura de Pagina de BoronVino">
-
-                            <div class="card-content">
-                                <h2>BoronVino</h2>
-                            </div>
-                        </article>
-
-                        <article class="proyecto-card" data-proyecto="3">
-                            <img src="./src/carrousel/planificador_page.png" alt="Captura de Pagina de Planificadoe">
-
-                            <div class="card-content">
-                                <h2>Planificador<br>Web</h2>
-                            </div>
-                        </article>
-
+                        </div>
                     </div>
                 </div>
             </div>
@@ -201,17 +211,13 @@
 
                 <!-- Botones centrados -->
                 <div class="carousel-arrows">
-                    <button class="btn boton-carrusel" aria-label="Servicio anterior">
+                    <button class="btn boton-carrusel" id="proyecto-prev" aria-label="Servicio anterior">
                         ◄
                     </button>
 
-                    <button class="btn boton-carrusel" aria-label="Servicio siguiente">
+                    <button class="btn boton-carrusel" id="proyecto-next" aria-label="Servicio siguiente">
                         ►
                     </button>
-                </div>
-
-                <div class="navbar-brand">
-                    <img src="./src/logo-michalle.png" alt="Logo Michalle">
                 </div>
 
             </div>
@@ -228,8 +234,14 @@
                         <span class="texto-uvita">SOBRE MI</span>
                     </div>
 
-                    <div class="col-12 col-md-9">
+                    <div class="col-12 col-md-8">
                         <hr class="texto-blanquito">
+                    </div>
+
+                    <div class="col-12 col-md-1">
+                        <div class="navbar-brand">
+                            <img src="./src/logo-michalle.png" alt="Logo Michalle">
+                        </div>
                     </div>
                 </div>
 
@@ -259,8 +271,14 @@
                         <span class="texto-oscurito">SOBRE MI - HABILIDADES</span>
                     </div>
 
-                    <div class="col-12 col-md-9">
+                    <div class="col-12 col-md-8">
                         <hr class="texto-oscurito">
+                    </div>
+
+                    <div class="col-12 col-md-1">
+                        <div class="navbar-brand">
+                            <img src="./src/logo-michalle.png" alt="Logo Michalle">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -275,8 +293,14 @@
                         <span class="texto-oscurito">CONTÁCTAME</span>
                     </div>
 
-                    <div class="col-12 col-md-9">
+                    <div class="col-12 col-md-8">
                         <hr class="texto-oscurito">
+                    </div>
+
+                    <div class="col-12 col-md-1">
+                        <div class="navbar-brand">
+                            <img src="./src/logo-michalle.png" alt="Logo Michalle">
+                        </div>
                     </div>
                 </div>
 
